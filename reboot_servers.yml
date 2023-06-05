@@ -1,0 +1,10 @@
+---
+- name: Reboot Linux Servers.
+  hosts: linux-servers
+  become: true
+
+  tasks:
+    - name: Rebooting Linux VM
+      reboot:
+
+# ansible-playbook  -i hosts --ask-pass --ask-become-pass reboot_servers.yml
