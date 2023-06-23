@@ -1,6 +1,6 @@
 ---
 - name: Reboot Linux Servers.
-  hosts: linux-servers
+  hosts: all
   become: true
 
   tasks:

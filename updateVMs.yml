@@ -1,4 +1,5 @@
 ---
+
 - hosts: yum
   become: true
   tasks:

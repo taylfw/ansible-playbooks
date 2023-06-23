@@ -1,0 +1,14 @@
+user0:
+  name: bob
+  age: 21
+user1:
+  name: madya
+  age: 25
+  skills:
+  - php
+  - perl
+  - yaml
+user2:
+  name: julie
+  age: 21
+  

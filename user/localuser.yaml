@@ -1,0 +1,13 @@
+---
+- name: 'Manage Local Account'
+  hosts: localhost
+  become: true
+  gather_facts: false
+  tasks:
+    - name: 'Manage User Account'
+      user:
+        name: "{{ user_account }}"
+        state: 'present'
+        generate_ssh_key: true
+        ssh_key_type: 'ecdsa'
+        ssh_key_file: '.ssh/id_ecdsa'
